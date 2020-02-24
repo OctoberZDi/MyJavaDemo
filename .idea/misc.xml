@@ -6,8 +6,11 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/spring-boot-demo/spring-boot-demo1/pom.xml" />
         <option value="$PROJECT_DIR$/other-demo/hutool-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/other-demo/hutool/pom.xml" />
+        <option value="$PROJECT_DIR$/other-demo/beetl/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-demo/spring-boot-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-demo/spring-boot-demo-CROS/pom.xml" />
       </list>
     </option>
   </component>

@@ -3,8 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/MyGitHub-OctoberZDi-MyJavaDemo.iml" filepath="$PROJECT_DIR$/.idea/MyGitHub-OctoberZDi-MyJavaDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/other-demo/beetl/beetl.iml" filepath="$PROJECT_DIR$/other-demo/beetl/beetl.iml" />
       <module fileurl="file://$PROJECT_DIR$/other-demo/hutool/hutool.iml" filepath="$PROJECT_DIR$/other-demo/hutool/hutool.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-boot-demo/spring-boot-demo1/spring-boot-demo1.iml" filepath="$PROJECT_DIR$/spring-boot-demo/spring-boot-demo1/spring-boot-demo1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-demo/spring-boot-demo/spring-boot-demo.iml" filepath="$PROJECT_DIR$/spring-boot-demo/spring-boot-demo/spring-boot-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-demo/spring-boot-demo-cors/spring-boot-demo-cors.iml" filepath="$PROJECT_DIR$/spring-boot-demo/spring-boot-demo-cors/spring-boot-demo-cors.iml" />
     </modules>
   </component>
 </project>
