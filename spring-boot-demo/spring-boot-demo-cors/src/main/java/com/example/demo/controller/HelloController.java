@@ -1,6 +1,5 @@
 package com.example.demo.controller;
 
-import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -15,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
  **/
 @RestController
 // 解决跨域 方式3 注解 局部跨域
-@CrossOrigin
+//@CrossOrigin
 @RequestMapping(value = "test")
 public class HelloController {
     // 解决跨域方式4 局部跨域

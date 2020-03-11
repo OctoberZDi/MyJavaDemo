@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/other-demo/hutool/hutool.iml" filepath="$PROJECT_DIR$/other-demo/hutool/hutool.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-demo/spring-boot-demo/spring-boot-demo.iml" filepath="$PROJECT_DIR$/spring-boot-demo/spring-boot-demo/spring-boot-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-demo/spring-boot-demo-cors/spring-boot-demo-cors.iml" filepath="$PROJECT_DIR$/spring-boot-demo/spring-boot-demo-cors/spring-boot-demo-cors.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-demo/spring-boot-demo-cors-test/spring-boot-demo-cors-test.iml" filepath="$PROJECT_DIR$/spring-boot-demo/spring-boot-demo-cors-test/spring-boot-demo-cors-test.iml" />
     </modules>
   </component>
 </project>

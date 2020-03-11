@@ -11,6 +11,7 @@
         <option value="$PROJECT_DIR$/other-demo/beetl/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-demo/spring-boot-demo/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-demo/spring-boot-demo-CROS/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-demo/spring-boot-demo-cors-test/pom.xml" />
       </list>
     </option>
   </component>

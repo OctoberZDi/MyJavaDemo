@@ -1,6 +1,5 @@
 package com.example.demo.config;
 
-
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpHeaders;
@@ -15,7 +14,7 @@ import org.springframework.web.filter.CorsFilter;
  * @Author: zhangdi
  * @Date: 2020年02月23日 15:55
  **/
-//@Configuration
+@Configuration
 public class CorsFilterConfig {
 
     // 解决跨域的第二种方式
