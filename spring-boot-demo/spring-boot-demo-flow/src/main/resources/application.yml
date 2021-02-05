@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: spring-boot-demo-flow
+  datasource:
+    url: jdbc:mysql://localhost:3306/my_flow
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver

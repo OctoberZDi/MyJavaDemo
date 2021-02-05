@@ -1,0 +1,37 @@
+## 测试单个上传文件
+POST http://localhost:4444/file/upload
+//Authorization:Bearer {{auth_token}}
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="formType"
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="test.zip"
+Content-Type: application/x-zip-compressed
+
+< D:\cg\test.zip
+--WebAppBoundary--
+
+
+### 测试多个文件上传
+## 测试上传文件
+POST http://localhost:4444/file/uploads
+Authorization:Bearer {{auth_token}}
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="formType"
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="test.jpg"
+Content-Type: application/x-zip-compressed
+
+< D:\cg\test.jpg
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="test.zip"
+Content-Type: application/x-zip-compressed
+
+< D:\cg\test.zip
+--WebAppBoundary--

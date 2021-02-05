@@ -1,0 +1,29 @@
+GET http://localhost:7777/user/findById/zhangdi
+Accept: application/json
+
+###
+POST http://localhost:7777/user/insert
+Accept: application/json
+Content-Type: application/json
+
+{
+  "userId": "6666",
+  "userName": "张小满",
+  "password": "22222222222",
+  "birth": "2020-05-22"
+}
+
+###
+POST http://localhost:7777/user/update
+Accept: application/json
+Content-Type: application/json
+
+{
+  "userId": "77777",
+  "userName": "张迪222号",
+  "password": "3333333"
+}
+
+###
+GET http://localhost:7777/user/delete/1111
+Accept: application/json

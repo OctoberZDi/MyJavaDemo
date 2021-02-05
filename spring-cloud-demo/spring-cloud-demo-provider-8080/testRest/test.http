@@ -1,0 +1,4 @@
+
+###
+GET http://localhost:8080/user/getStr/32323234
+Content-Type: application/xml

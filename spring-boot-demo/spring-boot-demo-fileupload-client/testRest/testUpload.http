@@ -1,0 +1,66 @@
+#### 测试接口1
+GET http://localhost:5556/client/hello
+
+#### 测试文件2
+### 上传文件 模拟前端文件上传
+POST http://localhost:5556/client/uploadFile
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary\
+Content-Disposition: form-data; name="file"
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="zd06.zip"
+Content-Type: application/json
+
+< D:\cg\zd06.zip
+--WebAppBoundary--
+
+#### 测试文件3
+### 上传文件 模拟本地实体文件上传
+POST http://localhost:5556/client/uploadFile2
+
+###
+GET http://10.110.36.234:5556/client/hello
+
+###
+GET  http://10.200.72.146:5556/client/hello
+
+###
+POST http://10.200.72.146:5556/client/uploadFile
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary\
+Content-Disposition: form-data; name="file"
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="zd06.zip"
+Content-Type: application/json
+
+< D:\cg\zd06.zip
+--WebAppBoundary--
+
+###
+POST http://10.200.72.146:5556/client/uploadFile2
+
+### 获取token
+## -Dfile.encoding=UTF-8 中文乱码解决方案按，增加启动参数
+POST http://10.200.72.146/loushang-oauth/oauth/token
+Content-Type: application/x-www-form-urlencoded
+Authorization: Basic YnBtLWFkbWluLWNvbnNvbGU6c2VjcmV0
+
+username=platadmin&password=79b2cf0337180351d2dcc5ee9d625481&grant_type=password
+
+> {% client.global.set("access_token", response.body.access_token); %}
+
+###
+POST http://10.200.72.146:5556/client/uploadFileBpm
+Authorization:Bearer {{access_token}}
+###
+POST http://10.200.72.146:5556/client/importForModelDesigner
+Authorization:Bearer {{access_token}}
+
+####
+GET  http://10.200.72.76:5556/client/hello1
+####
+GET  http://10.200.72.76:5556/client/hello1?name=123123

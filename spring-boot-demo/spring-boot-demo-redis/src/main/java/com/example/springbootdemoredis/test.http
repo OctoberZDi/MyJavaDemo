@@ -1,0 +1,9 @@
+GET http://localhost:3333/redis/test
+Accept: application/json
+
+###
+GET http://localhost:3333/redis/test2
+Accept: application/json
+###
+GET http://localhost:3333/redis/get2/111222
+Accept: application/json

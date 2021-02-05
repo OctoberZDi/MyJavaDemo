@@ -1,0 +1,17 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 10.200.72.146:8848
+  application:
+    name: fileuploadclient-service
+server:
+  port: 5556
+  max-http-header-size: 4048576
+test:
+  file1: /data/inspur/jar/testUpload/uu.zip
+  file2: /data/inspur/jar/model-designer/data/tmp/zd测试null/9ad7399d-9b1c-43e4-b5ad-70916d1dc2bb/张迪测试流程001.zip
+
+logging:
+  level:
+    com.example.springbootdemofileuploadclient.service.**: debug

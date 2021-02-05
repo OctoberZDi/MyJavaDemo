@@ -1,0 +1,25 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: provider8080-service
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    url: jdbc:mysql://localhost:3306/mydb?setUnicode=true&characterEncoding=utf8
+    password: root
+feign:
+  hystrix:
+    ## 这个很重要，默认是false
+    enabled: true
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000

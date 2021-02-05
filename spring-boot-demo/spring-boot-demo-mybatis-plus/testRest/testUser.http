@@ -1,0 +1,28 @@
+###
+GET http://localhost:8888/user/getAll
+
+
+###
+POST  http://localhost:8888/user/insert
+Content-Type: application/json
+
+{
+  "name": "张迪",
+  "age": 12,
+  "email": "zhangdi@inspur.com"
+}
+
+###
+POST  http://localhost:8888/user/update
+Content-Type: application/json
+
+{
+  "id":"1342678073950191629",
+  "name": "张迪222",
+  "age": 1223,
+  "email": "zhangdi22@inspur.com"
+}
+
+
+###
+GET http://localhost:8888/user/testChain

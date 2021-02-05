@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试echarts init</title>
+    <script src="https://cdn.bootcss.com/echarts/4.6.0/echarts.min.js"></script>
+    <script></script>
+</head>
+
+<body>
+<div style="width: 800px;height: 500px;" id="testDiv1"></div>
+</body>
+</html>
+<script type="text/javascript">
+    // 获取dom元素
+    let dom = document.getElementById('testDiv1');
+    // 初始化一个echarts实例
+    let myChart = echarts.init(dom);
+    // 定义图标配置
+    let option = {
+        xAxis: {
+            type: 'category',
+            boundaryGap: false,
+            data: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+        },
+        yAxis: {
+            type: 'value'
+        },
+        legend: {
+            data: ['联盟广告', '美团', '饿了么', '阿里巴巴']
+        },
+        series: [
+            {
+                type: 'line',
+                name: '联盟广告',
+                areaStyle: {color: 'red'},
+                data: [100, 3, 311, 334, 2, 15, 0]
+            }, {
+                type: 'line',
+                name: '美团',
+                areaStyle: {color: '#000'},
+                data: [1, 100, 150, 255, 2, 44, 13]
+            }, {
+                type: 'line',
+                name: '饿了么',
+                areaStyle: {color: '#000'},
+                data: [22, 44, 55, 66, 222, 111, 50]
+            },
+            {type: 'line', name: '阿里巴巴', areaStyle: {color: '#000'}, data: [100, 23423, 311, 334, 2, 1222, 0]}
+        ]
+
+    };
+
+    // 调用setOption
+    myChart.setOption(option);
+
+</script>

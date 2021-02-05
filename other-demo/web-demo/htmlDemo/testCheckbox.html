@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+<script>
+    $(document).ready(function () {
+        $("input[name='chk']").on("change", function () {
+            console.log($("input[name='chk']:checked").length);
+            $("#btnSubmit").prop("disabled", $("input[name='chk']:checked").length === 0);
+        });
+    });
+</script>
+<label><input name='chk' checked type="checkbox">苹果</label>
+<label><input name='chk' checked type="checkbox">橘子</label>
+<label><input name='chk' checked type="checkbox">香蕉</label>
+<br>
+
+<input id="btnSubmit" value="同意" type="submit">
+</body>
+</html>

@@ -1,0 +1,7 @@
+###
+GET  http://localhost:4444/test/hello
+###
+POST   http://localhost:4444/test/hello4?name=zhangdi&password=123456&type=你好啊
+
+###
+GET http://localhost:4444/test/getSession

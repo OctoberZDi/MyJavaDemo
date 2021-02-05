@@ -1,0 +1,5 @@
+####
+GET  http://localhost:8081/aop/test1/world
+
+####
+POST  http://localhost:8081/aop/test2/world

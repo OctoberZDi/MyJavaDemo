@@ -1,0 +1,16 @@
+
+###
+GET http://localhost:8888/user/getStr2/zhuyu
+
+###
+GET http://localhost:8888/user/getStr/zhuyu
+
+###
+GET http://localhost:8888/user/getObj
+Content-Type: application/json
+
+{
+  "name": "zhangdi",
+  "age": "21"
+}
+

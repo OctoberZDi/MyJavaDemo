@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.springbootdemotkmybatis.mapper.CgDataSourceMapper">
+  <resultMap id="BaseResultMap" type="com.example.springbootdemotkmybatis.po.CgDataSource">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="ID" jdbcType="VARCHAR" property="id" />
+    <result column="DS_NAME" jdbcType="VARCHAR" property="dsName" />
+    <result column="CREATE_TIME" jdbcType="Tiege dIMESTAMP" property="createTime" />
+    <result column="CREATOR_NAME" jdbcType="VARCHAR" property="creatorName" />
+    <result column="STATUS" jdbcType="VARCHAR" property="status" />
+    <result column="DB_URL" jdbcType="VARCHAR" property="dbUrl" />
+    <result column="DB_TYPE" jdbcType="VARCHAR" property="dbType" />
+    <result column="DB_USERNAME" jdbcType="VARCHAR" property="dbUsername" />
+    <result column="DB_PASSWORD" jdbcType="VARCHAR" property="dbPassword" />
+    <result column="SCHEMA_NAME" jdbcType="VARCHAR" property="schemaName" />
+    <result column="REGISTRATION_CENTER_TYPE" jdbcType="VARCHAR" property="registrationCenterType" />
+    <result column="REGISTRATION_CENTER_ADDRESS" jdbcType="VARCHAR" property="registrationCenterAddress" />
+  </resultMap>
+</mapper>

@@ -1,0 +1,9 @@
+###
+GET  http://localhost:8080/test/testSuccess
+
+###
+GET  http://localhost:8080/test/testFailure
+
+###
+GET  http://localhost:8080/test/testConverter
+

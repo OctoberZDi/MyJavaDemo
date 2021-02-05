@@ -1,0 +1,43 @@
+server:
+  port: 8099
+  max-http-header-size: 4048576
+spring:
+  #####缓存数据库连接地址#####
+  redis:
+    database: 0
+    host: 10.110.36.234
+    port: 6379
+  application:
+    name: codegenerator33-zd2-service
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 10.110.36.234:8848
+  datasource:
+    driver-class-name: com.oscar.Driver
+    # 金仓：com.kingbase8.Driver
+    # 神通 com.oscar.Driver
+    # localhost
+    url: jdbc:oscar://10.110.36.234:2020/OSRDB2020
+    # 金仓： jdbc:oscar://10.110.36.136:2020/OSRDB2020
+    # 神通：jdbc:oscar://10.110.36.136:2020/OSRDB2020
+    # url: jdbc:oscar://10.200.72.25:2004/OA
+    # url: jdbc:oscar://10.110.36.78:2003/OSRDB
+    username: CODE_GENERATOR
+    password: oa_123
+  main:
+    allow-bean-definition-overriding: true
+  servlet:
+    multipart:
+      #文件大小
+      max-file-size: 500MB
+      max-request-size: 800MB
+beetl:
+  templatesPath: /static/view
+
+#分页插件配置
+sqlhelper:
+  mybatis:
+    instrumentor:
+      #神通数据库目前暂时需要配置该选项，方便兼容神通的模式
+      dialect: postgresql

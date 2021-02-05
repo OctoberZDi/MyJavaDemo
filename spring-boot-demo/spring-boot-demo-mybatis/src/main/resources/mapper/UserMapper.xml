@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.springbootdemomybatis.mapper.UserMappesr">
+    <select id="selectById" resultType="com.example.springbootdemomybatis.entity.User">
+        select *
+        from user
+        where id = #{id}
+    </select>
+
+    <select id="selectAll" resultType="com.example.springbootdemomybatis.entity.User">
+        select *
+        from user;
+    </select>
+
+    <insert id="insertUser" useGeneratedKeys="true" parameterType="com.example.springbootdemomybatis.entity.User">
+        insert into user (name, age, email, create_time, update_time)
+        values (#{name}, #{age}, #{email}, #{create_time}, #{update_time})
+    </insert>
+
+    <insert id="insertUsers" useGeneratedKeys="true" parameterType="java.util.List">
+        insert into user (name, age, email, create_time, update_time)
+        values
+        <foreach collection="users" item="item" separator=",">
+            (#{item.name}, #{item.age}, #{item.email}, #{item.create_time}, #{item.update_time})
+        </foreach>
+    </insert>
+
+    <update id="updateUserById">
+        update user
+        set name        = #{name},
+            age         = #{age},
+            email       = #{email},
+            create_time = #{create_time},
+            update_time = #{update_time}
+        where id = #{id}
+    </update>
+
+    <delete id="deleteUserById">
+        delete
+        from user
+        where id = #{id}
+    </delete>
+</mapper>

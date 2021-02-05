@@ -1,0 +1,19 @@
+logging:
+  # 日志记录配置文件的位置
+  config: "classpath:logback.xml"
+  # 记录异常时使用的转化字
+  exception-conversion-word: %wEX
+spring:
+  autoconfigure:
+    # 要排除的自动配置类
+    exclude: org.springframework.boot.autoconfigure.admin.SpringApplicationAdminJmxAutoConfiguration
+  # 用逗号分个的概要文件标识列表
+  profiles:
+    # 无条件激活指定的逗号分个的配置文件列表
+    active:
+    # 无条件激活指定的逗号分隔的配置文件列表（如果使用YAML，则激活配置文件列表）。
+    include:
+
+  # 邮件属性
+  mail:
+    default-encoding: utf-8
