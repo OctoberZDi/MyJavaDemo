@@ -2,24 +2,73 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="beetl" />
-        <module name="spring-boot-demo-cors-test" />
-        <module name="hutool" />
-        <module name="spring-boot-demo" />
+        <module name="spring-boot-demo-tkmybatis" />
+        <module name="spring-cloud-config-server-git" />
+        <module name="spring-boot-demo-mybatis-plus" />
         <module name="spring-boot-demo-cors" />
+        <module name="spring-boot-demo-flow" />
+        <module name="spring-cloud-demo-config-server-git" />
+        <module name="spring-boot-demo-apiresponse" />
+        <module name="spring-boot-demo" />
+        <module name="spring-boot-demo-fileupload-server" />
+        <module name="spring-cloud-demo-config-client" />
+        <module name="spring-cloud-demo-provider-8080" />
+        <module name="spring-boot-demo-redis" />
+        <module name="spring-boot-demo-cors-test" />
+        <module name="alibaba" />
+        <module name="spring-boot-demo-aop" />
+        <module name="spring-boot-demo-fileupload-client" />
+        <module name="spring-boot-demo-echarts" />
+        <module name="spring-boot-rocketmq-demo" />
+        <module name="beetl" />
+        <module name="spring-boot-demo-jwt" />
+        <module name="spring-boot-demo-mybatis" />
+        <module name="apache-common-test" />
+        <module name="hutool" />
+        <module name="spring-cloud-demo-feign" />
+        <module name="spring-boot-demo-druid" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="alibaba" target="1.8" />
+      <module name="aliyun-test" target="1.8" />
+      <module name="apache-common" target="1.5" />
+      <module name="apache-common-test" target="1.5" />
       <module name="beetl" target="1.8" />
+      <module name="fileupload-service2" target="1.8" />
       <module name="hutool" target="1.8" />
       <module name="spring-boot-demo" target="1.8" />
+      <module name="spring-boot-demo-allmaven" target="1.5" />
+      <module name="spring-boot-demo-aop" target="1.8" />
+      <module name="spring-boot-demo-apiresponse" target="1.8" />
       <module name="spring-boot-demo-cors" target="1.8" />
       <module name="spring-boot-demo-cors-test" target="1.8" />
+      <module name="spring-boot-demo-druid" target="1.8" />
+      <module name="spring-boot-demo-echarts" target="1.8" />
+      <module name="spring-boot-demo-file" target="1.8" />
+      <module name="spring-boot-demo-fileupload-client" target="1.8" />
+      <module name="spring-boot-demo-fileupload-server" target="1.8" />
+      <module name="spring-boot-demo-fileupload-service" target="1.8" />
+      <module name="spring-boot-demo-flow" target="1.8" />
+      <module name="spring-boot-demo-free" target="1.8" />
+      <module name="spring-boot-demo-jwt" target="1.8" />
+      <module name="spring-boot-demo-mybatis" target="1.8" />
+      <module name="spring-boot-demo-mybatis-plus" target="1.8" />
+      <module name="spring-boot-demo-redis" target="1.8" />
+      <module name="spring-boot-demo-tkmybatis" target="1.8" />
       <module name="spring-boot-demo1" target="1.8" />
+      <module name="spring-boot-rocketmq-demo" target="1.8" />
+      <module name="spring-cloud-config-server-git" target="1.8" />
+      <module name="spring-cloud-demo-config-client" target="1.8" />
+      <module name="spring-cloud-demo-config-server-git" target="1.8" />
+      <module name="spring-cloud-demo-consumer" target="1.8" />
+      <module name="spring-cloud-demo-feign" target="1.8" />
+      <module name="spring-cloud-demo-provider-8080" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -27,9 +76,21 @@
       <module name="beetl" options="-parameters" />
       <module name="hutool" options="-parameters" />
       <module name="spring-boot-demo" options="-parameters" />
+      <module name="spring-boot-demo-aop" options="-parameters" />
+      <module name="spring-boot-demo-apiresponse" options="-parameters" />
       <module name="spring-boot-demo-cors" options="-parameters" />
       <module name="spring-boot-demo-cors-test" options="-parameters" />
+      <module name="spring-boot-demo-free" options="-parameters" />
+      <module name="spring-boot-demo-jwt" options="-parameters" />
+      <module name="spring-boot-demo-redis" options="-parameters" />
       <module name="spring-boot-demo1" options="-parameters" />
+      <module name="spring-boot-rocketmq-demo" options="-parameters" />
+      <module name="spring-cloud-config-server-git" options="-parameters" />
+      <module name="spring-cloud-demo-config-client" options="-parameters" />
+      <module name="spring-cloud-demo-config-server-git" options="-parameters" />
+      <module name="spring-cloud-demo-consumer" options="-parameters" />
+      <module name="spring-cloud-demo-feign" options="-parameters" />
+      <module name="spring-cloud-demo-provider-8080" options="-parameters" />
     </option>
   </component>
 </project>
