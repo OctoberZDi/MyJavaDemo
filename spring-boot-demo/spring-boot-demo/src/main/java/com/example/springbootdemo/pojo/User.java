@@ -1,6 +1,5 @@
 package com.example.springbootdemo.pojo;
 
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
@@ -13,7 +12,9 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class User implements IUserService {
 
-    //静态变量
+    /**
+     * 静态变量
+     */
     private static String staticFiled = staticMethod();
     private String name;
     private String address;
@@ -23,7 +24,10 @@ public class User implements IUserService {
     }
 
 
-    //赋值静态变量的静态方法
+    /**
+     * 赋值静态变量的静态方法
+     * @return
+     */
     public static String staticMethod() {
         System.out.println("执行了静态方法");
         return "给静态字段赋值了";

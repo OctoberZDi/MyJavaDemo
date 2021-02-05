@@ -1,0 +1,11 @@
+## 此法访问不成功
+GET http://localhost:1002/info
+Accept: application/json
+
+###
+GET http://localhost:8080/config/get
+
+###
+GET http://localhost:8080/config/getService
+###
+GET http://localhost:8080/config/getInts

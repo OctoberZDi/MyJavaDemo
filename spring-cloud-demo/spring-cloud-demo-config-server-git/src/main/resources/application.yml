@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          # git 仓库的地址信息
+          uri: https://github.com/OctoberZDi/myconfig
+server:
+  port: 1001

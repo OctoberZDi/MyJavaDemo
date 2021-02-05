@@ -1,0 +1,24 @@
+GET http://localhost:1001/config-client-dev.yml
+Accept: application/json
+
+###
+GET http://localhost:1001/config-client/prod/master
+Accept: application/json
+
+###
+GET http://localhost:1001/config-client/dev/master
+Accept: application/json
+
+###
+GET http://localhost:1001/config-client/prod/master
+Accept: application/json
+
+
+### 访问配置信息的URL与配置文件的映射关系如下所示
+URL与配置文件的映射关系如下：
+
+/{application}/{profile}[/{label}]
+/{application}-{profile}.yml
+/{label}/{application}-{profile}.yml
+/{application}-{profile}.properties
+/{label}/{application}-{profile}.properties

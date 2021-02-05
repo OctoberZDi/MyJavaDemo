@@ -22,7 +22,8 @@ public class IDUtil {
         for (int i = 0; i < 10; i++) {
             System.out.println(StrUtil.toString(i) + ObjectId.next());
         }
-        MD5 md5 = SecureUtil.md5();
+        MD5 md5;
+        md5 = SecureUtil.md5();
 
     }
 }

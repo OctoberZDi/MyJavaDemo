@@ -1,0 +1,27 @@
+POST http://localhost:4444/login/login
+Accept: application/json
+Content-Type: application/json
+
+{
+  "userid": "zhangdi",
+  "username": "张迪",
+  "password": "123456"
+}
+
+> {% client.global.set("token", response.body.token); %}
+
+###
+GET http://localhost:4444/login/getMessage
+Content-Type:  application/json
+token: {{token}}
+#token: eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJ6aGFuZ2RpOuW8oOi_qiIsImV4cCI6MTU5MTc4MDk4NH0.xDT_EsyF7plxf0lK2j3hURGoVRFnahut6b_89JzNL1g
+
+### 解析token
+POST  http://localhost:4444/login/deToken
+Content-Type: application/json
+
+# eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJ6aGFuZ2RpOuW8oOi_qiIsImV4cCI6MTU5MTc4MDk4NH0.xDT_EsyF7plxf0lK2j3hURGoVRFnahut6b_89JzNL1g
+{
+  "token": "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOlsiemhhbmdkaSIsIjEyMzQ1NiJdLCJpc3MiOiJhdXRoMCIsImV4cCI6MTU5MjM3Njc5MX0.LfojBuk-bYpN7Pv7arOFY-JfhJD4OavyEclyTsjjJVc",
+  "password": "123456"
+}

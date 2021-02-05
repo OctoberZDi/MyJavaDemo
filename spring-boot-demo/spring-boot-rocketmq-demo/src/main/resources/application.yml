@@ -1,0 +1,11 @@
+server:
+  port: 7777
+
+rocketmq:
+  info:
+    nameSvr: 10.110.36.136:9876;127.0.0.1:9876
+    topic: topic_demo
+    group: group_demo
+    tag: tag_demo
+    instanceName: instance-demo
+

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta charset="UTF-8"/>
     <title>Page Index</title>
 </head>
@@ -11,7 +12,8 @@
 <script src="jquery-3.4.1.min.js"></script>
 <script>
     $.ajax({
-        url: 'http://localhost:8090/test/hello',
+        // url: 'http://localhost:8090/test/hello',
+        url: 'http://192.168.73.1:8799/core/test/hello',
         type: "POST",
         success: function (data) {
             $("#info").html("跨域访问成功:" + data);

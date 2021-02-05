@@ -14,10 +14,11 @@ import javax.servlet.http.HttpServletRequest;
  * @Author: zhangdi
  * @Date: 2020年02月21日 14:27
  **/
-@RestControllerAdvice
+//@RestControllerAdvice
 public class MyExceptioin {
     @ExceptionHandler(Exception.class)
     public String getException(HttpServletRequest request, Exception e) {
+
         System.out.println("******:" + e.getMessage());
 
         return e.getMessage();
