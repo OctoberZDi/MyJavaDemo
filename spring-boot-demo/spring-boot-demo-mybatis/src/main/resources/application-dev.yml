@@ -1,0 +1,23 @@
+# 应用名称
+spring:
+  application:
+    name: spring-boot-demo-mybatis
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mydb?setUnicode=true&characterEncoding=utf8&useSSL=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2B8&allowPublicKeyRetrieval=true
+    username: root
+    password: root
+server:
+  port: 8080
+mybatis:
+  config-location: classpath:mybatis-config.xml                       #mybatis-config所在路径
+  type-aliases-package: com.example.springbootdemomybatis.entity      # entity 别名
+  mapper-locations: classpath:mapper/**/*.xml                         #mapper映射文件
+
+# 测试解析list,set,map
+test:
+  list: aaa,bbb,ccc
+  list1: aa1
+  set: 111,222,333,111
+  map1: '{"name": "张迪", "sex": "男"}'
+  map2: '{"math": "90", "english": "85"}'

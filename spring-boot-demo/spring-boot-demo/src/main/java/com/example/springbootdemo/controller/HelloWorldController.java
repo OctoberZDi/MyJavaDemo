@@ -1,5 +1,6 @@
 package com.example.springbootdemo.controller;
 
+import com.alibaba.fastjson.JSONObject;
 import com.example.springbootdemo.annotation.LoginRequired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.util.Assert;
@@ -50,6 +51,7 @@ public class HelloWorldController {
     public String test4(@RequestParam Map<String, String> params) {
         return params.keySet().stream().map(e -> e + "=" + params.get(e)).collect(Collectors.joining("、"));
     }
+
     @Value("${server.port}")
     private String serverPort;
 
@@ -72,5 +74,10 @@ public class HelloWorldController {
         Object aa = null;
         Assert.notNull(aa, "aa is null");
         return "";
+    }
+
+    @RequestMapping(value = "hello5", method = RequestMethod.POST)
+    public String testHello5(@RequestBody JSONObject object) {
+        return object.toString();
     }
 }

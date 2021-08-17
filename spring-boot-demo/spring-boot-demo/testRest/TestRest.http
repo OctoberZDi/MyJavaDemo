@@ -1,7 +1,27 @@
 ###
 GET  http://localhost:4444/test/hello
+
 ###
-POST   http://localhost:4444/test/hello4?name=zhangdi&password=123456&type=你好啊
+POST http://localhost:4444/test/hello4?name=zhangdi&password=123456&type=你好啊
+
+###
+POST http://10.200.72.163:4444/test/hello4?name=zhangdi&password=123456&type=你好啊
+
+###
+GET http://10.200.72.163:4444/test/getSession
+
+###
+GET  http://localhost:4444/test/setSession/zhangdi111
 
 ###
 GET http://localhost:4444/test/getSession
+
+
+###
+POST http://localhost:4444/test/hello5
+Content-Type: application/json
+
+{
+  "name": "zhangdi",
+  "age": 30
+}

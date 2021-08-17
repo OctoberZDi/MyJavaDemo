@@ -1,0 +1,16 @@
+server:
+  port: 5555
+spring:
+  application:
+    name: mqtt-service
+
+mqtt:
+  username: admin
+  password: public
+  # 推送信息的连接地址，如果有多个，用逗号隔开，如：tcp://ip:1883,tcp://ip:1883
+  url: tcp://localhost:1883,tcp://localhost:1884
+  sender:
+    # 默认发送的主题
+    defaultTopic: goods
+    # ClientId
+    clientId: mqttClient01

@@ -1,0 +1,6 @@
+#### 默认主题发布消息
+GET  http://localhost:5555/mqtt/send?key=send&value=1234567
+
+
+#### 指定主题发布
+GET  http://localhost:5555/mqtt/send/topic?key=send&value=1234567&topic=goods2

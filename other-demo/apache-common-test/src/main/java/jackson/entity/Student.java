@@ -1,6 +1,6 @@
 package jackson.entity;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -13,6 +13,13 @@ import com.fasterxml.jackson.databind.ObjectMapper;
  * @Date: 2020年11月19日 16:51
  **/
 public class Student {
+    public Student(String name, String nickName, Integer age, Info info) {
+        this.name = name;
+        this.nickName = nickName;
+        this.age = age;
+        this.info = info;
+    }
+
     public Student(String name, String nickName, Integer age) {
         this.name = name;
         this.nickName = nickName;
@@ -40,14 +47,25 @@ public class Student {
                 "name='" + name + '\'' +
                 ", nickName='" + nickName + '\'' +
                 ", age=" + age +
+                ", info=" + info +
                 '}';
     }
 
     private String name;
     @JsonProperty(value = "nick")
     private String nickName;
-    @JsonIgnore
     private Integer age;
+
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    private Info info;
+
+    public Info getInfo() {
+        return info;
+    }
+
+    public void setInfo(Info info) {
+        this.info = info;
+    }
 
     public String getName() {
         return name;
@@ -73,3 +91,4 @@ public class Student {
         this.age = age;
     }
 }
+

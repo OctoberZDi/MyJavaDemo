@@ -1,0 +1,45 @@
+###
+GET  http://localhost:8080/user/hello
+
+### 根据id查询user
+GET  http://localhost:8080/user/selectById?id=1342678073950191812
+
+### 查询所有user
+GET  http://localhost:8080/user/selectAll
+
+### 插入用户
+POST  http://localhost:8080/user/insertUser
+Content-Type: application/json
+
+{
+  "name": "张小弟",
+  "age": 21,
+  "email": "91277@163.com",
+  "create_time": 1612493295346,
+  "update_time": 1612493295346
+}
+
+### 批量插入用户
+POST  http://localhost:8080/user/insertUsers
+Content-Type: application/json
+
+[
+  {
+    "name": "张小弟111",
+    "age": 21,
+    "email": "91277@163.com",
+    "create_time": 1612493295346,
+    "update_time": 1612493295346
+  },
+  {
+    "name": "张小弟222",
+    "age": 21,
+    "email": "91277@163.com",
+    "create_time": 1612493295346,
+    "update_time": 1612493295346
+  }
+]
+
+
+###
+POST  http://localhost:8080/user/deleteUserById?id=1342678073950191817

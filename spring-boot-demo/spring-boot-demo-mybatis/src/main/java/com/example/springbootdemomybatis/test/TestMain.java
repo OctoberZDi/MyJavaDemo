@@ -45,7 +45,7 @@ public class TestMain {
             System.out.println("批量插入 开始");
             List<User> users = new ArrayList<>();
 
-            for (int i = 0; i < 5; i++) {
+            for (int i = 0; i < 10; i++) {
                 int finalI = i;
                 users.add(new User() {
                     {
